@@ -1,26 +1,28 @@
 {
 	"name": "products",
-	"products": [
+	"tags": [
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
+			"name": "Обіди",
+			"products": [
+				{
+					"name": "Форшмак з кав‘яром оселедця",
+					"price": 159,
+					"short": "у вафельному ріжку",
+					"thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84022.jpg?t=1678107874491"
+				},
+				{
+					"name": "Устриця, афінована в Україні",
+					"price": 89,
+					"short": "з помідоровим розсолом",
+					"thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84021.jpg?t=1678107873054"
+				},
+				{
+					"name": "Оселедець з цибулею та солоним огірком",
+					"price": 149,
+					"short": "з темним хлібом",
+					"thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-226371.jpg?t=1700129210560"
+				}
+			]
 		}
 	]
 }
