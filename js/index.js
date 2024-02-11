@@ -38,3 +38,36 @@ window.addEventListener("resize", function () {
     container.style.maxWidth = screenWidth + "px";
   }
 });
+
+function activeDetails(detailsId) {
+  // Отримайте всі елементи з класом "list-item"
+  var listItems = document.querySelectorAll(".list-item first");
+
+  // Знайдіть активний елемент та видаліть його клас "active"
+  var activeItem = document.querySelector(".list-item.active");
+
+  // Знайдіть елемент за допомогою переданого ідентифікатора та додайте йому клас "active"
+  var targetItem = document.querySelector("#" + detailsId);
+  if (targetItem) {
+    targetItem.classList.add("active");
+  }
+}
+function openModal() {
+  document.getElementById("modalBackground").style.display = "block";
+  document.getElementById("modalWindow").style.display = "block";
+}
+
+// Функція для закриття модального вікна
+function closeModal() {
+  document.getElementById("modalBackground").style.display = "none";
+  document.getElementById("modalWindow").style.display = "none";
+}
+document.addEventListener("DOMContentLoaded", function () {
+  // Знаходимо елемент "ЇЖА"
+  var firstListItem = document.querySelector(".list-item.first");
+
+  // Додаємо клас "active" до знайденого елементу
+  firstListItem.classList.add("active");
+});
+
+showDetails("mealsDetails");

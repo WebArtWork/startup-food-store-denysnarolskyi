@@ -213,6 +213,39 @@ header {
   height: 40px;
   font-size: 16px;
 }
+.item-btn {
+  width: 100%;
+  height: 48px;
+  left: 24px;
+  bottom: 140px;
+  background: #034706;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  color: white;
+  transition: color 0.5s, background 0.5s, border-color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 85px;
+  border: none;
+  outline: none;
+  margin-top: 35px;
+}
+
+.item-btn .text {
+  flex: 1;
+  text-align: left;
+}
+
+.item-btn svg {
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
 .add-to-favorite:disabled {
   background-color: #ccc;
   cursor: not-allowed;
@@ -281,7 +314,42 @@ header {
   margin-bottom: 10px;
   padding-left: 50px;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 575px;
+  background-color: white;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
 
+/* Стилі для тла за модальним вікном */
+.modal-background {
+  display: none;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Стилі для змісту модального вікна */
+.modal-content img {
+  padding-bottom: 50px;
+  width: 325px;
+}
+.modal-content button {
+}
 .search-icon {
   position: absolute;
   left: 18px;
@@ -636,6 +704,44 @@ header {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 305px;
+      height: 545px;
+      background-color: white;
+      border: 3px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+    }
+    .item-btn {
+      width: 100%;
+      height: 48px;
+      left: 24px;
+      bottom: 140px;
+      background: #034706;
+      border-radius: 24px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      vertical-align: middle;
+      color: white;
+      transition: color 0.5s, background 0.5s, border-color 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 45px;
+      border: none;
+      outline: none;
+      margin-top: 55px;
     }
   }
 }
