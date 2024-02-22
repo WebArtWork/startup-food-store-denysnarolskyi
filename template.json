@@ -1,165 +1,164 @@
 {
-	"title": "Welcome to waw Template",
-	"description": "description",
-	"keywords": "keywords",
-	"prefix": "/template",
-	"picture": "picture",
-	"author": "author",
-	"moderators": [],
-	"scss": "scss/index.scss",
-	"variables": {
-		"land_video": "/template/img/lands.MP4",
-		"land_image": "/template/img/2.webp",
-		"primary_color": "#d3c9b7",
-		"secondary_color": "#f2f1ed",
-		"primary_text_color": "#000000",
-		"secondary_text_color": "#FFFFFF",
-		"primary_radius": "0",
-		"secondar_radius": "0"
-	},
-	"store": {
-		"name": "Store Name",
-		"description": "Store Description"
-	},
-	"footer": {
-		"products": [
-			{
-				"id": "/product",
-				"price": 1200,
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "product"
-			},
-			{
-				"id": "/product",
-				"price": 1200,
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "product"
-			},
-			{
-				"id": "/product",
-				"price": 1200,
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "product"
-			}
-		],
-		"designs": [
-			{
-				"id": "/product",
-				"price": 1200,
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "product"
-			},
-			{
-				"id": "/product",
-				"price": 1200,
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "product"
-			},
-			{
-				"id": "/product",
-				"price": 1200,
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "product"
-			}
-		],
-		"articles": [
-			{
-				"id": "/article",
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "article"
-			},
-			{
-				"id": "/article",
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "article"
-			},
-			{
-				"id": "/article",
-				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
-				"name": "article"
-			}
-		],
-		"contents": [
-			{
-				"name": "NameTitle",
-				"thumb": "/angelina_nianchyr/img/4.webp",
-				"url": "Lorem ipsum ?"
-			},
-			{
-				"name": "NameTitle",
-				"thumb": "/angelina_nianchyr/img/8.webp",
-				"url": "Lorem ipsum ?"
-			},
-			{
-				"name": "NameTitle",
-				"thumb": "/angelina_nianchyr/img/7.webp",
-				"url": "Lorem ipsum ?"
-			},
-			{
-				"name": "NameTitle",
-				"thumb": "/angelina_nianchyr/img/5.webp",
-				"url": "Lorem ipsum ?"
-			}
-		],
-		"groups": [
-			{
-				"name": "Group Name",
-				"categories": [
-					{
-						"name": "Category Name",
-						"tags": [
-							{
-								"name": "Tag Name"
-							}
-						]
-					}
-				]
-			}
-		]
-	},
-	"tags": [
-		{
-			"category": {
-				"group": "article"
-			},
-			"name": "Tag one"
-		},
-		{
-			"category": {
-				"group": "product"
-			},
-			"name": "Tag one"
-		},
-		{
-			"category": {
-				"group": "design"
-			},
-			"name": "Tag one"
-		}
-	],
+  "title": "Welcome to waw Template",
+  "description": "description",
+  "keywords": "keywords",
+  "prefix": "/narolskyidenis",
+  "picture": "picture",
+  "author": "author",
+  "moderators": [],
+  "scss": "scss/index.scss",
+  "variables": {
+    "land_video": "narolskyidenis/img/lands.MP4",
+    "land_image": "narolskyidenis/img/2.webp",
+    "primary_color": "#d3c9b7",
+    "secondary_color": "#f2f1ed",
+    "primary_text_color": "#000000",
+    "secondary_text_color": "#FFFFFF",
+    "primary_radius": "0",
+    "secondar_radius": "0"
+  },
+  "store": {
+    "name": "Store Name",
+    "description": "Store Description"
+  },
+  "footer": {
+    "products": [
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "product"
+      },
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "product"
+      },
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "product"
+      }
+    ],
+    "designs": [
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "product"
+      },
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "product"
+      },
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "product"
+      }
+    ],
+    "articles": [
+      {
+        "id": "/article",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "article"
+      },
+      {
+        "id": "/article",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "article"
+      },
+      {
+        "id": "/article",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.comnarolskyidenis/img/welcome.png",
+        "name": "article"
+      }
+    ],
+    "contents": [
+      {
+        "name": "NameTitle",
+        "thumb": "/angelina_nianchyr/img/4.webp",
+        "url": "Lorem ipsum ?"
+      },
+      {
+        "name": "NameTitle",
+        "thumb": "/angelina_nianchyr/img/8.webp",
+        "url": "Lorem ipsum ?"
+      },
+      {
+        "name": "NameTitle",
+        "thumb": "/angelina_nianchyr/img/7.webp",
+        "url": "Lorem ipsum ?"
+      },
+      {
+        "name": "NameTitle",
+        "thumb": "/angelina_nianchyr/img/5.webp",
+        "url": "Lorem ipsum ?"
+      }
+    ],
+    "groups": [
+      {
+        "name": "Group Name",
+        "categories": [
+          {
+            "name": "Category Name",
+            "tags": [
+              {
+                "name": "Tag Name"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tags": [
+    {
+      "category": {
+        "group": "article"
+      },
+      "name": "Tag one"
+    },
+    {
+      "category": {
+        "group": "product"
+      },
+      "name": "Tag one"
+    },
+    {
+      "category": {
+        "group": "design"
+      },
+      "name": "Tag one"
+    }
+  ],
 
-	"groups": [
-		{
-			"categories": [
-				{
-					"name": "Category Name",
-					"tags": [
-						{
-							"name": "Tag Name"
-						}
-					]
-				}
-			]
-		}
-	]
+  "groups": [
+    {
+      "categories": [
+        {
+          "name": "Category Name",
+          "tags": [
+            {
+              "name": "Tag Name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
-
