@@ -1,6 +1,35 @@
 {
   "name": "products",
   "tags": [
+	   {
+      "name": "Їжа",
+      "products": [
+        {
+          "name": "Форшмак з кав‘яром оселедця",
+          "price": 159,
+          "short": "у вафельному ріжку",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84022.jpg?t=1678107874491"
+        },
+        {
+          "name": "Устриця, афінована в Україні",
+          "price": 89,
+          "short": "з помідоровим розсолом",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84021.jpg?t=1678107873054"
+        },
+        {
+          "name": "Оселедець з цибулею та солоним огірком",
+          "price": 149,
+          "short": "з темним хлібом",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-226371.jpg?t=1700129210560"
+        },
+		 {
+          "name": "Оселедець з цибулею та солоним огірком",
+          "price": 149,
+          "short": "з темним хлібом",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-226371.jpg?t=1700129210560"
+        }
+      ]
+    },
     {
       "name": "Обіди",
       "products": [
@@ -17,6 +46,12 @@
           "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84021.jpg?t=1678107873054"
         },
         {
+          "name": "Оселедець з цибулею та солоним огірком",
+          "price": 149,
+          "short": "з темним хлібом",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-226371.jpg?t=1700129210560"
+        },
+		 {
           "name": "Оселедець з цибулею та солоним огірком",
           "price": 149,
           "short": "з темним хлібом",
@@ -68,6 +103,169 @@
           "price": 69,
           "short": "мед, горілка, кориця палички,лимон",
           "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        }
+      ]
+    },
+	{
+      "name": "Легкий алкоголь",
+      "products": [
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Обліпихова",
+          "price": 69,
+          "short": "Обліпиха, горілка, мед, ваніль, кориця",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84131.jpg?t=1706113266072"
+        },
+        {
+          "name": "Медовуха",
+          "price": 69,
+          "short": "мед, горілка, кориця палички,лимон",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        },
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Обліпихова",
+          "price": 69,
+          "short": "Обліпиха, горілка, мед, ваніль, кориця",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84131.jpg?t=1706113266072"
+        },
+        {
+          "name": "Медовуха",
+          "price": 69,
+          "short": "мед, горілка, кориця палички,лимон",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        }
+      ]
+    },
+	{
+      "name": "Міцний алкоголь",
+      "products": [
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Обліпихова",
+          "price": 69,
+          "short": "Обліпиха, горілка, мед, ваніль, кориця",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84131.jpg?t=1706113266072"
+        },
+        {
+          "name": "Медовуха",
+          "price": 69,
+          "short": "мед, горілка, кориця палички,лимон",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        },
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Обліпихова",
+          "price": 69,
+          "short": "Обліпиха, горілка, мед, ваніль, кориця",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84131.jpg?t=1706113266072"
+        },
+        {
+          "name": "Медовуха",
+          "price": 69,
+          "short": "мед, горілка, кориця палички,лимон",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        }
+      ]
+    },
+	{
+      "name": "Коктейлі",
+      "products": [
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Обліпихова",
+          "price": 69,
+          "short": "Обліпиха, горілка, мед, ваніль, кориця",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84131.jpg?t=1706113266072"
+        },
+        {
+          "name": "Медовуха",
+          "price": 69,
+          "short": "мед, горілка, кориця палички,лимон",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        },
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Вишнева",
+          "price": 69,
+          "short": "Горілка, вишня, кориця, ваніль, портвейн,цукор",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84130.jpg?t=1706113241662"
+        },
+        {
+          "name": "Обліпихова",
+          "price": 69,
+          "short": "Обліпиха, горілка, мед, ваніль, кориця",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84131.jpg?t=1706113266072"
+        },
+        {
+          "name": "Медовуха",
+          "price": 69,
+          "short": "мед, горілка, кориця палички,лимон",
+          "thumb": "https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84132.jpg?t=1706113291414"
+        }
+      ]
+    },
+	{
+      "name": "Гарячі напої",
+      "products": [
+        {
+          "name": "Чай",
+          "price": 69,
+          "short": "Чай",
+          "thumb": "https://deluxe.com.ua/media/img/uploads/image/article/black-tea-benefit-deluxe.jpg"
+        }
+      ]
+    },
+	{
+      "name": "Прохолодні напої",
+      "products": [
+        {
+          "name": "Холодний чай",
+          "price": 69,
+          "short": "Холодний чай",
+          "thumb": "https://shuba.life/static/content/thumbs/1905x884/5/1a/mc36ra---c1905x884x50px50p-up--276d22deb6b6bee49ed2296ba6d621a5.jpg"
         }
       ]
     }

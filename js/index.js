@@ -18,6 +18,13 @@ function toggleOptions() {
   const customSelect = document.getElementById("custom-select");
   customSelect.classList.toggle("open");
 }
+function details(name){
+	if(name === 'drinks'){
+		return 'drinkDetails'
+	}else{
+		return 'mealsDetails'
+	}
+}
 
 function selectOption(value) {
   const selectStyled = document.querySelector(".select-styled");
@@ -69,5 +76,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Додаємо клас "active" до знайденого елементу
   firstListItem.classList.add("active");
 });
-
-showDetails("mealsDetails");

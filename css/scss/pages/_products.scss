@@ -6,17 +6,17 @@ body {
 }
 header {
   display: flex;
+  min-width: 920px;
   margin: 0 auto;
   justify-content: space-between;
   background-color: #ffffff;
-  width: 920px;
   color: #fff;
+  align-items: center;
   padding: 22px;
-  display: flex;
   border-radius: 10px;
   border-color: rgb(193, 118, 118);
+  box-sizing: border-box; // Ensures padding is included in the total width
 }
-
 .website-name {
   display: flex;
   align-items: center;
@@ -26,12 +26,11 @@ header {
   font-size: 15px;
 }
 .website-rightsection {
-  width: 280px;
+  width: auto; // Changed from fixed width to auto for flexibility
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
 }
+
 .menu-switcher {
   background-color: #ffffff; /* Колір фону */
   color: #000000; /* Колір тексту */
@@ -41,6 +40,7 @@ header {
   border: 1px solid #ccc;
   display: flex;
   align-items: center;
+  margin-left: 15px;
   justify-content: space-between;
 }
 
@@ -69,19 +69,18 @@ header {
 .main_container {
   display: block;
   margin: 0 auto;
-  max-width: 920px;
-  // align-items: center;
-  // justify-content: center;
-  // justify-items: center;
-  // display: flex;
-}
-.container {
-  width: 920px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
+  max-width: 920px; // Changed from min-width to max-width
+  width: 100%; // Ensure it takes up available width
 }
 
+.container {
+  width: 100%; // Allow it to adapt to the size of its parent
+  max-width: 920px; // Ensure it doesn't exceed the maximum width
+  margin: 0 auto; // Keep it centered
+  display: flex;
+  flex-wrap: wrap; // Allow items to wrap in smaller screens
+  justify-content: space-between;
+}
 .left-div {
   width: 252px;
   background-color: #fff;
@@ -112,9 +111,8 @@ header {
 }
 .top-bar {
   display: flex;
-  max-width: 108px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -124,7 +122,6 @@ header {
   box-shadow: 0 6px 8px -6px rgba(24, 39, 75, 0.12),
     0 8px 16px -6px rgba(24, 39, 75, 0.08);
   border-radius: 16px;
-  margin-left: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,7 +166,7 @@ header {
 }
 
 .details-container {
-  display: none;
+  display: block;
 }
 
 .details-container.active {
@@ -441,6 +438,13 @@ header {
   overflow: hidden;
   white-space: pre-wrap;
 }
+@media (max-width: 920px) {
+  .main_container,
+  .container {
+    width: auto; // Let them shrink to fit smaller screens
+    padding: 0 10px; // Add padding on smaller screens for some space from the edges
+  }
+}
 
 @media only screen and (max-width: 999px) {
   .conditional-container .add-to-favorite {
@@ -513,73 +517,74 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 }
+// @media (max-width: 920px) {
+//      header {
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 10px; // Reduced padding for more space
+//         max-width: 100%;
+//         box-sizing: border-box; // Make sure padding is included in the width
+//     }
 
-// @media only screen and (max-width: 600px) {
-//   .menu-item {
-//     flex-direction: column;
-//     text-align: center;
+//     .logo, .search-bar, .menu-button {
+//         width: 100%; // Make elements full width to avoid overflow
+//         margin-bottom: 10px; // Add some space between elements
+//     }
+
+//     .logo {
+//         max-height: 50px; // Reduce logo size
+//         overflow: hidden; // Hide parts of the logo that overflow
+//         display: flex;
+//         justify-content: center; // Center logo
+//     }
+
+//     .search-bar {
+//         margin: 0 10px; // Add margin to the left and right
+//         input {
+//             width: calc(100% - 20px); // Input field should not overflow its container
+//         }
+//     }
+
+//     .menu-button {
+//         display: flex;
+//         justify-content: space-between; // Spread items in the menu button if needed
+//     }
+//   .website-name, .website-rightsection {
+//     justify-content: center; // Center these elements in the mobile view
+//     width: 100%; // Take full width to use available space
 //   }
 
-//   .logo {
-//     font-size: 24px;
-//   }
-
-//   .circle-logo {
-//     width: 40px;
-//     height: 40px;
-//   }
-
-//   .circle-logo h2 {
-//     font-size: 14px;
-//   }
-
-//   .add-to-favorite {
-//     font-size: 14px;
-//   }
-
-//   .container {
-//     flex-direction: column;
-//   }
-
-//   .left-div {
-//     width: 100%;
-//     margin-bottom: 10px;
-//   }
-
-//   .right-div {
-//     margin-left: 0;
-//   }
-
-//   .search-input {
-//     padding-left: 30px;
+//   .website-name h1 {
+//     margin-top: 10px; // Add some space between the logo and the navigation/menu
+//     font-size: 14px; // Slightly reduce font size for small screens
 //   }
 // }
 
 /* New styles for food-item */
 @media only screen and (max-width: 1000px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff;
-    width: 465px;
+    min-width: 100%;
     color: #fff;
     display: flex;
     padding: 0px;
     border-radius: 8px;
     border-color: rgb(193, 118, 118);
-  }
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 22px;
 
+    align-items: center;
+  }
   .website-name h1 {
     color: black;
     font-size: 12px;
   }
   .website-rightsection {
-    width: 200px;
+    width: auto; // Changed from fixed width to auto for flexibility
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
   }
+
   .website-rightsection select {
     border-radius: 8px;
     width: 20px;
@@ -634,6 +639,9 @@ header {
       justify-content: space-between;
       align-items: center;
       width: 265px;
+    }
+    .menu-switcher {
+      margin-right: 5px;
     }
     .food-item img {
       max-width: 75px;
@@ -690,12 +698,10 @@ header {
     .left-div {
       width: 315px;
     }
-    header {
-      width: 315px;
-    }
+
     .circle-logo img {
-      height: 100px;
-      width: 160px;
+      height: 120px;
+      width: 180px;
       background-color: #fff;
     }
     .website-rightsection {
@@ -742,6 +748,23 @@ header {
       border: none;
       outline: none;
       margin-top: 55px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    header {
+      width: 345px;
+      margin-left: 15px;
+      border-radius: 10px;
+      border-color: rgb(193, 118, 118);
+      box-sizing: border-box; // Ensures padding is included in the total width
+    }
+    .circle-logo img {
+      height: 80px;
+      width: 140px;
+      background-color: #fff;
+    }
+    .left-div {
+      margin-left: 25px;
     }
   }
 }
