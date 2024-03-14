@@ -27,15 +27,11 @@
         <input type="text" class="search-input" placeholder="Назва страви" />
       </div>
       <div class="list-container">
-		{% for tag in tags %}
-
-        <div
-          class="list-item first"
-          onclick="showDetails('mealsDetails')"
-        >
-          {{{tag.name}}}
-        </div>
-		{% endfor %}
+{% for tag in tags %}
+<div class="list-item first" data-target="details-{{{ loop.index }}}">
+	{{{tag.name}}}
+</div>
+{% endfor %}
         <!-- <ul class="sub-menu">
           <li class="list-item" onclick="showDetails('mealsDetails')">
             М'ясо, сало, ковбаса
@@ -73,7 +69,7 @@
     </div>
     <div class="right-div">
       {% for tag in tags %}
-      <div class="details-container">
+	<div class="details-container" id="details-{{{ loop.index }}}">
         <div class="top-bar">
           <div class="icon-wrapper" style="background: rgb(253, 237, 226)">
             <div class="img-container">
@@ -83,13 +79,14 @@
               />
             </div>
           </div>
-          <div class="marketing-item--text">
-            {{{tag.name}}}
-          </div>
+          <div class="marketing-item--text">{{{tag.name}}}</div>
         </div>
         <hr size="1px" width="100%" color="#ccc" />
         {% for product in tag.products %}
-        <div class="food-item" onclick="openModal()">
+        <div
+          class="food-item"
+          onclick='openModal({ "name": "{{{product.name}}}", "price": "{{{product.price}}}", "short": "{{{product.short}}}", "thumb": "{{{product.thumb}}}" })'
+        >
           <div>
             <h4>{{{product.name}}}</h4>
             <span class="food-item-price">{{{product.price}}} ₴</span>
@@ -102,7 +99,7 @@
               src="{{{product.thumb}}}"
               alt="Форшмак з кав‘яром оселедця"
             />
-            <button class="basket-button">
+		<button onclick="event.stopPropagation();" class="basket-button" data-product-name="{{{product.name}}}">
               <div class="base-icon order-mark__icon">
                 <div class="base-icon-content">
                   <svg
@@ -131,6 +128,7 @@
         {% endfor %}
       </div>
       {% endfor %}
+	<button id="scrollTopBtn" onclick="scrollToTop()" style="display: none;">Scroll to Top</button>
     </div>
   </div>
   <div
@@ -167,15 +165,12 @@
         </div>
         <!---->
       </div>
-      <h4>Форшмак з кав‘яром оселедця</h4>
-      <img
-        src="https://docs-s2p.s3.eu-west-1.amazonaws.com/menu-prod/dish-84022.jpg?t=1678107874491"
-        alt="ff"
-      />
-      <span class="food-item-price">159 ₴</span>
-      <p>у вафельному ріжку</p>
+      <h4 id="modalProductName">Product Name</h4>
+      <img id="modalProductImage" src="" alt="Product Image" />
+      <span class="food-item-price" id="modalProductPrice">Product Price</span>
+      <p id="modalProductDescription">Product Description</p>
       <button class="item-btn">
-        <span class="text">Додати в закладки</span>
+        <span class="text" data-product-name="modalProductName">Додати в закладки</span>
         <div class="">
           <div class="">
             <svg
@@ -201,7 +196,6 @@
     </div>
   </div>
 </div>
-
 <!-- {% for product in products %}
 <h1>{{{product.name}}}</h1>
 <img src="{{{product.thumb}}}" alt="{{{product.name}}}">

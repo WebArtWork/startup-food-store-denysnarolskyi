@@ -4,6 +4,12 @@ body {
   padding: 0;
   background-color: #ffffff;
 }
+html {
+    scroll-behavior: smooth;
+}
+.basket-button.is-favorite svg {
+    fill: green; /* Change as needed */
+}
 header {
   display: flex;
   min-width: 920px;
@@ -155,6 +161,21 @@ header {
   background-color: #034706;
   color: #fff;
   border-radius: 15px;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 1px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #034706;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  display: none; /* Ensure it's not shown by default */
 }
 
 .right-div {
